@@ -1,6 +1,6 @@
 .card {
   width: 200px;
-  border: 1px solid #f3f3f3;
+  border: 1px solid $card-border-color;
   box-sizing: border-box;
 
   &__image {
@@ -16,7 +16,7 @@
   }
 
   &__info {
-    padding-inline: 16px;
+    padding-inline: $card-info-padding-inline;
   }
 
   &__name {
@@ -29,7 +29,7 @@
   &__code {
     line-height: $smaller-line-height;
     font-size: $small-font-size;
-    color: #616070;
+    color: $secondary-text-color;
 
     margin-top: $margin-top-proportion;
   }
@@ -39,7 +39,7 @@
     justify-content: space-between;
     align-items: center;
     margin-top: $margin-top-proportion * 4;
-    height: 16px;
+    height: $rating-height;
   }
 
   &__reviews {
@@ -58,31 +58,31 @@
     &-text {
       margin: 0;
       font-size: $medium-font-size;
-      color: #616070;
+      color: $secondary-text-color;
     }
 
     &-value {
       margin: 0;
       font-weight: 700;
-      font-size: 16px;
+      font-size: $huge-font-size;
     }
   }
 
   &__button {
-    background-color: #00acdc;
+    background-color: $button-main-color;
     border: none;
-    border-radius: 5px;
-    margin-block: 16px;
+    border-radius: $button-border-radius;
+    margin-block: $button-margin-block;
     text-align: center;
-    line-height: 40px;
+    line-height: $button-line-height;
 
     &-link {
       display: block;
       width: 166px;
-      height: 40px;
+      height: $button-line-height;
       color: #fff;
-      line-height: 40px;
-      font-size: 14px;
+      line-height: $button-line-height;
+      font-size: $big-font-size;
       font-weight: 700;
       text-transform: uppercase;
       text-decoration: none;
@@ -90,9 +90,9 @@
       &:hover {
         box-sizing: border-box;
         background-color: #fff;
-        border: 1px solid #00acdc;
-        color: #00acdc;
-        border-radius: 5px;
+        border: 1px solid $button-main-color;
+        color: $button-main-color;
+        border-radius: $button-border-radius;
       }
     }
   }
